@@ -241,7 +241,7 @@ const EmailComposer = () => {
           <div className="space-y-2">
             <Label htmlFor="templateBody">Template Content</Label>
             <p className="text-xs text-slate-500">
-              Use {{name}} syntax for variables (e.g., {{name}}, {{date}})
+              Use {'{{name}}'} syntax for variables (e.g., {'{{name}}'}, {'{{date}}'})
             </p>
             <Textarea
               id="templateBody"

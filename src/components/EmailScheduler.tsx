@@ -36,7 +36,7 @@ const EmailScheduler = () => {
     subject: '',
     to: '',
     date: new Date(),
-    frequency: 'once',
+    frequency: 'once' as 'once' | 'daily' | 'weekly' | 'monthly',
     status: 'scheduled',
   });
 
@@ -60,7 +60,7 @@ const EmailScheduler = () => {
   const handleFrequencyChange = (value: string) => {
     setNewSchedule({
       ...newSchedule,
-      frequency: value,
+      frequency: value as 'once' | 'daily' | 'weekly' | 'monthly',
     });
   };
 
